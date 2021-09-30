@@ -12,6 +12,7 @@ function CheckoutBody() {
   const items = useSelector(selectItems);
   const favoritedItems = useSelector(selectFavoritedItems);
   const itemCost = 5;
+
   return (
     <div>
       {" "}
@@ -40,7 +41,7 @@ function CheckoutBody() {
         </div>
       )}
       {/* favorited items: */}
-      <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
+      {/* <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
       <div className="flex flex-wrap">
         {favoritedItems.map((item, i) => (
           <LazyLoadImage
@@ -49,7 +50,7 @@ function CheckoutBody() {
             className="h-10 w-10"
           ></LazyLoadImage>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
