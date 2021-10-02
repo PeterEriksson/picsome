@@ -20,7 +20,7 @@ function CheckoutItem({ item }) {
           onClick={removeItemFromBasket}
           className="h-5 transform cursor-pointer hover:scale-110 duration-200 w-5 mr-4"
         />
-        <LazyLoadImage className="h-10 w-10 mb-4" src={item.url} />
+        <LazyLoadImage className="h-16 w-16 mb-4" src={item.url} />
       </div>
       <p className="mr-4">$5</p>
     </div>

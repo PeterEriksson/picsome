@@ -1,17 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CheckoutItem from "../components/CheckoutItem";
 /* import Nav from "../components/Nav"; */
 import Head from "next/head";
-
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
 import { selectItems as selectFavoritedItems } from "../slices/favoritesSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { PlusCircleIcon } from "@heroicons/react/outline";
+import { addToBasket } from "../slices/basketSlice";
 
 function CheckoutBody() {
   const items = useSelector(selectItems);
   const favoritedItems = useSelector(selectFavoritedItems);
   const itemCost = 5;
+  const [favItems, setFavItems] = useState([]);
+
+  const dispatch = useDispatch();
+
+  const favsToDisplay = () => {
+    const favs = favoritedItems.filter((__item) => {
+      if (!items.some((item) => item.id === __item.id)) {
+        return __item;
+      }
+    });
+    setFavItems(favs);
+  };
+
+  useEffect(() => {
+    favsToDisplay();
+  }, [items]);
+
+  const handleAddItemToBasket = (id) => {
+    //find the product
+    const product = favoritedItems.find((item) => item.id === id);
+
+    dispatch(addToBasket(product));
+  };
+
+  /*   console.log(favItems); */
 
   return (
     <div>
@@ -40,17 +66,25 @@ function CheckoutBody() {
           </div>
         </div>
       )}
-      {/* favorited items: */}
-      {/* <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
-      <div className="flex flex-wrap">
-        {favoritedItems.map((item, i) => (
-          <LazyLoadImage
-            src={item.url}
-            key={i}
-            className="h-10 w-10"
-          ></LazyLoadImage>
+      {/* FAVORITED ITEMS(but that are not in cart) */}
+      <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
+      <div className="flex flex-wrap mb-7 mt-2 ml-3">
+        {favItems.map((item, i) => (
+          <div key={i} className="flex flex-col items-center ml-4">
+            <LazyLoadImage
+              src={item.url}
+              key={i}
+              className="h-16 w-16"
+            ></LazyLoadImage>
+            <div className="flex justify-center">
+              <PlusCircleIcon
+                onClick={() => handleAddItemToBasket(item.id)}
+                className="h-4 w-4 text-blue-600 cursor-pointer"
+              />
+            </div>
+          </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
