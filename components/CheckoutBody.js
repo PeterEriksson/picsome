@@ -67,7 +67,11 @@ function CheckoutBody() {
         </div>
       )}
       {/* FAVORITED ITEMS(but that are not in cart) */}
-      <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
+      {favItems.length > 0 && (
+        <h1 className="font-semibold text-base mt-4 ml-3">
+          Add some favorites?
+        </h1>
+      )}
       <div className="flex flex-wrap mb-7 mt-2 ml-3">
         {favItems.map((item, i) => (
           <div key={i} className="flex flex-col items-center ml-4">
