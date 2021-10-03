@@ -8,12 +8,14 @@ import { selectItems as selectFavoritedItems } from "../slices/favoritesSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PlusCircleIcon } from "@heroicons/react/outline";
 import { addToBasket } from "../slices/basketSlice";
+import { emptyBasket } from "../slices/basketSlice";
 
 function CheckoutBody() {
   const items = useSelector(selectItems);
   const favoritedItems = useSelector(selectFavoritedItems);
   const itemCost = 5;
   const [favItems, setFavItems] = useState([]);
+  const [buttonText, setButtonText] = useState("Place Order");
 
   const dispatch = useDispatch();
 
@@ -39,6 +41,15 @@ function CheckoutBody() {
 
   /*   console.log(favItems); */
 
+  const placeOrder = () => {
+    setButtonText("Ordering...");
+    setTimeout(() => {
+      console.log("Order placed!");
+      setButtonText("Place Order");
+      dispatch(emptyBasket());
+    }, 3000);
+  };
+
   return (
     <div>
       {" "}
@@ -58,10 +69,10 @@ function CheckoutBody() {
       )}
       {/* PLACE ORDER BUTTON */}
       {items.length > 0 && (
-        <div className="flex justify-center">
+        <div onClick={placeOrder} className="flex justify-center">
           <div className="w-32 group transtion duration-100 hover:scale-105 cursor-pointer h-10 rounded-full bg-navBarColor flex-row flex justify-center items-center">
             <p className="text-white group-hover:underline cursor-pointer font-semibold text-sm ">
-              Place order
+              {buttonText}
             </p>
           </div>
         </div>
