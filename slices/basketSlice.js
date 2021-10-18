@@ -18,7 +18,7 @@ export const basketSlice = createSlice({
       );
       state.items = newBasket;
 
-      /* Sonny: */
+      /* S: */
       /* const index = state.items.findIndex(
         (basketItem) => basketItem.id === action.payload
       );

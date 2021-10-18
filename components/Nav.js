@@ -17,7 +17,7 @@ function Nav() {
     router.push("/");
   };
   return (
-    <div className="bg-navBarColor w-screen border-b-2 border-borderNavColor sticky z-40 top-0   h-20 flex flex-row items-center justify-between">
+    <div className="bg-navBarColor lg:px-10 shadow-md w-screen border-b border-borderNavColor sticky z-40 top-0   h-20 flex flex-row items-center justify-between">
       {/* Pic Some */}
       <p
         onClick={handlePicSomeClick}
