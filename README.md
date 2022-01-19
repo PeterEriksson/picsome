@@ -42,7 +42,7 @@ Project is created with:
 
 ## Links
 - Live Site URL: [Pic-some retail site](https://picsome-onlinestore.netlify.app/)
-- [Summary of the challenge:](https://github.com/boneswvb/scrimba-react-pic-some-app)
+- [Summary of the challenge](https://github.com/boneswvb/scrimba-react-pic-some-app)
 
 ## What I learned
 
