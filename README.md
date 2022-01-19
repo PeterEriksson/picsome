@@ -33,11 +33,10 @@ Project is created with:
 ## Screenshots
 
 #### Home page
- ![countries home](https://user-images.githubusercontent.com/17027312/150142885-99a1861d-774b-4518-92b3-e3e51ef8381a.png)
- 
- #### Checkout page
-![country detail](https://user-images.githubusercontent.com/17027312/150143180-31cecd74-1507-4dc8-9431-cb9bfbd55cdf.png)
+ ![picsome home](https://user-images.githubusercontent.com/17027312/150189601-f997fdb5-ef89-417d-be0c-3033c149eff0.png)
 
+ #### Checkout page
+![picsome checkout](https://user-images.githubusercontent.com/17027312/150189630-b5980b20-e140-47ec-b0a8-553cd79b2017.png)
 
 
 ## Links
