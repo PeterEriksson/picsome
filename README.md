@@ -50,7 +50,7 @@ Project is created with:
 
 ## TODO
 
-- How to get user's previous path with Next.js? 
+- Work on design on Home page. Maybe use grid for displaying photos.
 
 
 ## Author
