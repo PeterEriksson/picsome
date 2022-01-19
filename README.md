@@ -1,7 +1,7 @@
 # 🛒 Simple retail site
 Retail site with checkout. Last challenge of the Scrimba react boot camp by Bob Ziroll. Rebuilt with Next.js and TailwindCss. Using Redux instead of Context api.
 
-Summary of the challenge: https://github.com/boneswvb/scrimba-react-pic-some-app
+Summary of the challenge: https://github.com/boneswvb/scrimba-react-pic-some-app <br />
 Link to Scrimba: https://scrimba.com/
 
 ## Getting Started
