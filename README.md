@@ -46,7 +46,7 @@ Project is created with:
 
 ## What I learned
 
-- 
+- Redux state management
 
 ## TODO
 
