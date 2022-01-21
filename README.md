@@ -19,7 +19,7 @@ Project is created with:
 
 - React
 - Next.js
-- Redux for state management
+- Redux
 - Tailwind CSS
 - Flexbox
 - Netlify (hosting)
@@ -50,6 +50,7 @@ Project is created with:
 ## TODO
 
 - Work on design on Home page. Maybe use grid for displaying photos.
+- Nicer design for checkout page
 
 
 ## Author
