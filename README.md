@@ -27,7 +27,10 @@ Project is created with:
 
 ## Features
 
-- 
+- Add shopping item to basket
+- Delete shopping item 
+- Mark favorite items
+- Place order (time out function that clears basket and notifies user)
  
 
 ## Screenshots
