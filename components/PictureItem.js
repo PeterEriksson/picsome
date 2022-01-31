@@ -2,25 +2,20 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PlusCircleIcon } from "@heroicons/react/outline";
 import { HeartIcon } from "@heroicons/react/outline";
+import { PlusIcon } from "@heroicons/react/outline";
 import { HeartIcon as HeartIconSolid } from "@heroicons/react/solid";
 import { ShoppingCartIcon as ShoppingCartSolid } from "@heroicons/react/solid";
-
-import { addToBasket } from "../slices/basketSlice";
-
-import { PlusIcon } from "@heroicons/react/outline";
-
-import { useDispatch } from "react-redux";
-
-import { useSelector } from "react-redux";
-import { selectItems } from "../slices/basketSlice";
-
+import {
+  addToBasket,
+  selectItems,
+  removeFromBasket,
+} from "../slices/basketSlice";
+import { useDispatch, useSelector } from "react-redux";
 import {
   addToFavorites,
   removeFromFavorites,
   selectItems as selectFavoritedItmes,
 } from "../slices/favoritesSlice";
-
-import { removeFromBasket } from "../slices/basketSlice";
 
 function PictureItem({ item }) {
   const items = useSelector(selectItems);
@@ -70,8 +65,9 @@ function PictureItem({ item }) {
   };
 
   return (
-    <div className="m-1 flex flex-col group relative ">
-      <div className="flex flex-row mt-2 z-30 justify-between absolute w-full ">
+    <div className="m-1.5 //flex //flex-col group relative ">
+      <div className="flex flex-row mt-2 z-30 space-x-6 justify-end pr-4 //justify-between absolute w-full ">
+        {/* <p className="text-white">index: {item.id}</p> */}
         {itemIsFavoritedCheck(item.id) ? (
           <HeartIconSolid
             onClick={removeItemFromFavorites}
@@ -101,10 +97,10 @@ function PictureItem({ item }) {
       </div>
       <LazyLoadImage
         src={item.url}
-        /* effect="blur" */ className={`h-32 w-32 
+        /* effect="blur" */ className={`//h-32 //w-32  
          rounded-md`}
       />
-      {/*  <p>index: {item.id}</p> */}
+      {/* <p>index: {item.id}</p> */}
     </div>
   );
 }

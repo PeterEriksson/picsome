@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Nav from "../components/Nav";
 import PictureItem from "../components/PictureItem";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 /* https://www.youtube.com/watch?v=iW39Merz0zE */
 const url =
@@ -29,10 +30,19 @@ export default function Home({ data }) {
       <Nav />
 
       {/* BODY SECTION */}
-      <div className="mt-3 mx-3 flex flex-wrap justify-center px-8">
-        {data.map((item, i) => (
-          <PictureItem key={i} item={item} />
-        ))}
+      {/* <div className="mt-3 mx-3 flex flex-wrap justify-center px-8"> */}
+      {/* <div className="grid grid-cols-3 gap-3"> */}
+      <div className="p-8">
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 1000: 3, 1200: 4 }}
+        >
+          <Masonry>
+            {data.map((item, i) => (
+              <PictureItem key={i} item={item} />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+        {/* </div> */}
       </div>
     </div>
   );
