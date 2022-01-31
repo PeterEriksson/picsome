@@ -36,7 +36,7 @@ Project is created with:
 ## Screenshots
 
 #### Home page
- ![picsome home](https://user-images.githubusercontent.com/17027312/150189601-f997fdb5-ef89-417d-be0c-3033c149eff0.png)
+ ![picsome-home](https://user-images.githubusercontent.com/17027312/151837965-90758638-47f8-4e98-8568-bb5704603ca8.png)
 
  #### Checkout page
 ![picsome checkout](https://user-images.githubusercontent.com/17027312/150189630-b5980b20-e140-47ec-b0a8-553cd79b2017.png)
@@ -52,8 +52,8 @@ Project is created with:
 
 ## TODO
 
-- Work on design on Home page. Maybe use grid for displaying photos.
 - Nicer design for checkout page
+- Masonry breaks a bit for the last photos at the homepage.
 
 
 ## Author
