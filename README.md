@@ -24,6 +24,7 @@ Project is created with:
 - Flexbox
 - Netlify (hosting)
 - Hero icons
+- react-responsive-masonry
 
 ## Features
 
@@ -31,6 +32,7 @@ Project is created with:
 - Delete shopping item 
 - Mark favorite items
 - Place order (time out function that clears basket and notifies user)
+- Masonry layout
  
 
 ## Screenshots
