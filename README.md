@@ -56,6 +56,7 @@ Project is created with:
 
 - Nicer design for checkout page
 - Masonry breaks a bit for the last photos at the homepage.
+- Align the width for navigation and home. 
 
 
 ## Author
