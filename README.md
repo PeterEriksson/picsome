@@ -49,7 +49,7 @@ Project is created with:
 - [Summary of the challenge](https://github.com/boneswvb/scrimba-react-pic-some-app)
 
 ## What I learned
-
+- Rehearsing basic javascript such as array methods, manipulating state, fetching data from external api.
 - Redux state management
 
 ## TODO
