@@ -52,6 +52,7 @@ Project is created with:
 - Rehearsing basic javascript such as array methods, manipulating state.
 - Fetching data from external api with Next.js.
 - Redux state management
+- Using a timeout function
 
 ## TODO
 
