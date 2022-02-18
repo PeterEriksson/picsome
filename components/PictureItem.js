@@ -65,7 +65,7 @@ function PictureItem({ item }) {
   };
 
   return (
-    <div className="m-1.5 //flex //flex-col group relative ">
+    <div className="//m-1.5 //flex //flex-col group relative ">
       <div className="flex flex-row mt-2 z-30 space-x-6 justify-end pr-4 //justify-between absolute w-full ">
         {/* <p className="text-white">index: {item.id}</p> */}
         {itemIsFavoritedCheck(item.id) ? (
