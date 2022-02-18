@@ -1,5 +1,5 @@
 # 🛒 Simple retail site
-Retail site with checkout. Last challenge of the Scrimba react boot camp by Bob Ziroll. Rebuilt with Next.js and TailwindCss. Using Redux instead of Context api.
+Retail site with checkout. Last challenge of the Scrimba react boot camp by Bob Ziroll. Rebuilt with Next.js and TailwindCss. Using Redux instead of Context api for state management.
 
 Summary of the challenge: https://github.com/boneswvb/scrimba-react-pic-some-app <br />
 Link to Scrimba: https://scrimba.com/
@@ -49,14 +49,15 @@ Project is created with:
 - [Summary of the challenge](https://github.com/boneswvb/scrimba-react-pic-some-app)
 
 ## What I learned
-- Rehearsing basic javascript such as array methods, manipulating state, fetching data from external api.
+- Rehearsing basic javascript such as array methods, manipulating state.
+- Fetching data from external api with Next.js.
 - Redux state management
 
 ## TODO
 
 - Nicer design for checkout page
 - Masonry breaks a bit for the last photos at the homepage.
-- Align the width for navigation and home. 
+- For the state manegement: instead of creating a favoritesSlice, create an itemsSlice and manipulate the isFavorited prop there (since the data we fetch already has isFavorited property)
 
 
 ## Author
