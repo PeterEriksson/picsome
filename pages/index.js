@@ -43,9 +43,6 @@ export default function Home({ data }) {
       <Nav />
 
       {/* BODY SECTION */}
-      {/* old... */}
-      {/* <div className="mt-3 mx-3 flex flex-wrap justify-center px-8"> */}
-
       <div className="//p-8 flex justify-center items-center">
         <div className="w-11/12 max-w-6xl py-4">
           <ResponsiveMasonry
