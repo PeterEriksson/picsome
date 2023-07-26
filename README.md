@@ -58,9 +58,9 @@ Project is created with:
 
 - Nicer design for checkout page
 - Masonry breaks a bit for the last photos at the homepage.
-- For the state manegement: instead of creating a favoritesSlice, create an itemsSlice and manipulate the isFavorited prop there (since the data we fetch already has isFavorited property)
+
 
 
 ## Author
 
-- Website - [Peter](https://peter-portfolio-app.netlify.app/)
+- Website - [Peter](https://petere-portfolio-2.vercel.app/)
