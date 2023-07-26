@@ -21,7 +21,6 @@ Project is created with:
 - Next.js
 - Redux
 - Tailwind CSS
-- Flexbox
 - Netlify (hosting)
 - Hero icons
 - react-responsive-masonry
